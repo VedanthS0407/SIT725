@@ -47,5 +47,5 @@ app.listen(port, () => {
   console.log(`Movie Night Planner is running at http://localhost:${port}`);
 });
 
-// ✅ Ensure export happens AFTER defining Movie
+
 module.exports = { Movie };

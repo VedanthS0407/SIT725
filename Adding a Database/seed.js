@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Movie } = require("./server"); // ✅ Importing correctly
+const { Movie } = require("./server"); 
 
 mongoose.connect("mongodb://localhost:27017/moviesDB", {
   useNewUrlParser: true,
