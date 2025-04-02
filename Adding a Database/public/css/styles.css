@@ -1,0 +1,27 @@
+body {
+    background: #090909;
+}
+
+.nav-wrapper {
+    background: #d32f2f;
+}
+
+.hero {
+    color: rgb(242, 235, 235);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero .btn-large {
+    background-color: #ff6f61;
+}
