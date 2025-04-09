@@ -1,0 +1,16 @@
+{
+  "name": "movieplanner_mvc",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Vedantha",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  }
+}
