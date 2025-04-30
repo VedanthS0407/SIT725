@@ -1,0 +1,22 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "request": "^2.88.2"
+  }
+}

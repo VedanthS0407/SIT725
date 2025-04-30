@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Planner</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Movie Night Planner</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#modal1" class="modal-trigger">Add Movie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container center-align">
+            <h1>Plan Your Perfect Movie Night!</h1>
+            <p class="flow-text">Discover and share your favorite movies with friends.</p>
+            <!-- <a href="#modal1" class="btn-large waves-effect waves-light modal-trigger">Add a Movie</a> -->
+        </div>
+    </div>
+
+    <!-- Movie Cards Section -->
+    <div class="container">
+        <h2 class="center-align" style="color: #f2efef;">Movie List</h2>
+        <div class="row" id="card-section">
+            <!-- Movie Cards will be added dynamically -->
+        </div>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Add a Movie</h4>
+            <div class="input-field">
+                <input id="movie-title" type="text">
+                <label for="movie-title">Movie Title</label>
+            </div>
+            <div class="input-field">
+                <input id="poster-url" type="text">
+                <label for="poster-url">Poster URL</label>
+            </div>
+            <div class="input-field">
+                <input id="trailer-url" type="text">
+                <label for="trailer-url">YouTube Trailer URL</label>
+            </div>
+            <div class="input-field">
+                <textarea id="description" class="materialize-textarea"></textarea>
+                <label for="description">Description</label>
+            </div>
+            <button class="btn waves-effect waves-light" id="submitForm">Add Movie</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script>
+      const socket = io();
+    
+      socket.on("connect", () => {
+        console.log("Connected to server");
+      });
+    
+      socket.on("movieAdded", (movieList) => {
+        console.log(" New movie added:", movieList);
+      
+      });
+    </script>
+     -->
+</body>
+</html>

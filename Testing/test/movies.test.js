@@ -8,7 +8,7 @@ describe('Movie Model Unit Test', function () {
   it('should create a movie object with correct fields', function () {
     const movie = new Movie({
       title: 'Inception',
-      poster: 'images/inception.jpg',
+      poster: 'images/interstellar.jpg',
       trailer: 'https://www.youtube.com/watch?v=YoHD9XEInc0',
       description: 'A mind-bending thriller'
     });
@@ -23,7 +23,7 @@ describe('Movie Model Unit Test', function () {
   it('should have undefined _id before saving to database', function () {
     const movie = new Movie({
       title: 'Tenet',
-      poster: 'images/tenet.jpg',
+      poster: 'images/interstellar.jpg',
       trailer: 'https://www.youtube.com/watch?v=L3pk_TBkihU',
       description: 'Time inversion and espionage'
     });
